@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang = "en">
+	{% include head.html %}
+	<body>
+		<div class="container">
+			{% include header.html %}
+				
+			{{ content }}
+
+			{% include footer.html %}
+
+		<div class="container">
+			
+		<!-- javascript at the end of the doc so page loads faster -->
+		{% include scripts.html %}
+
+		</div><!-- /.container -->
+
+	</body>
+</html>
