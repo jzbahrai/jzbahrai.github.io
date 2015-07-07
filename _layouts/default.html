@@ -9,16 +9,16 @@
 			<!-- link to main stylesheet -->
 			<link rel="stylesheet" type="text/css" href="/CSS/main.css">
 			<link href="/CSS/jumbotron-narrow.css" rel="stylesheet">
+			<link href="/CSS/bootstrap.css" rel="stylesheet">
 		</head>
 		<body>
-			<nav>
-	    		<ul>
-	        		<li><a href="/">Home</a></li>
-		        	<li><a href="/about">About</a></li>
-	        		<li><a href="/cv/Jumana Bahrainwala Resume June2015.pdf">CV</a></li>
-	        		<li><a href="/blog">Blog</a></li>
-	    		</ul>
-			</nav>
+			<div class="container">
+				<div class="header">
+					<ul class="nav nav-pills pull-right">
+	        			<li class="{{ page.cv }}"><a href="/cv/Jumana Bahrainwala Resume June2015.pdf" title = "CV">CV</a></li>
+					</ul>
+					<h3 class="text-muted"><a href="/">Jumana Bahrainwala</a></h3>
+				</div>
 			<div class="container">
 			
 			{{ content }}
