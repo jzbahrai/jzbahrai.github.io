@@ -1,48 +1,20 @@
 <!DOCTYPE html>
-	<html lang = "en">
-		<head>
-			<meta charset="utf-8">
-			<meta name="viewport" width="device-width, initial-scale=1.0">
-			<meta name="description" content="Developer">
-			<meta name="author" content="Jumana Bahrainwala">
-			<title>{{ page.title }}</title>
-			<!-- link to main stylesheet -->
-			<!--link rel="stylesheet" type="text/css" href="/CSS/main.css"-->
-			<link href="/css/jumbotron-narrow.css" rel="stylesheet">
-			<link href="/css/bootstrap.css" rel="stylesheet">
-			<link href="/css/style.css" rel="stylesheet">
-		</head>
-		<body>
-			<div class="container">
-				<div class="header">
-					<ul class="nav nav-pills pull-right">
-	        			<li class="{{ page.cv }}"><a href="/cv/Jumana Bahrainwala Resume June2015.pdf" title = "CV">RESUME</a></li>
-					</ul>
-					<h3 class="text-muted"><a href="/">Jumana Bahrainwala</a></h3>
-				</div>
+<html lang = "en">
+	{% include head.html %}
+	<body>
+		<div class="container">
+			{% include header.html %}
 				
-				{{ content }}
+			{{ content }}
 
-				<div class="footer">
-					<div class="row">
-					<div class="col-sm-8">
-					<p><small><a href="mailto:jzbahrai@uwaterloo.ca" target="_blank">jzbahrai@uwaterloo.ca</a></small></p>
-					<P><small><a href="https://github.com/jzbahrai">github.com/jzbahrai</a></small></p>
-					</div>
-					<div class="col-sm-4">
-					<p class="pull-right"><small><a href="/site" title="About this site">About this site</a></small></p>
-					</div>
-					</div>
-				</div> <!-- /footer -->	
+			{% include footer.html %}
 
-			<div class="container">
+		<div class="container">
 			
-			
-			
-			<!-- javascript at the end of the doc so page loads faster -->
-			<script src="//code.jquery.com/jquery.js"></script>
-			<script src="/js/bootstrap.min.js"></script>
-			<script src="/js/library.js"></script>
-			</div><!-- /.container -->
-		</body>
-	</html>
+		<!-- javascript at the end of the doc so page loads faster -->
+		{% include scripts.html %}
+
+		</div><!-- /.container -->
+
+	</body>
+</html>
